@@ -51,6 +51,7 @@ export const Sidebar = () => {
               <FaRegUser className="sidebarIcon" style={{ fontSize: "27px" }} />
               Users
             </li>
+
             <li className="sidebarListItem">
               <MdViewTimeline
                 className="sidebarIcon"
@@ -65,6 +66,7 @@ export const Sidebar = () => {
               />
               Transactions
             </li>
+
             <li className="sidebarListItem">
               <MdBarChart
                 className="sidebarIcon"

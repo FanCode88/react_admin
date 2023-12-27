@@ -11,7 +11,7 @@ export const UserList = () => {
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
-  
+
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
@@ -60,13 +60,13 @@ export const UserList = () => {
 
   return (
     <div className="userList">
-    <DataGrid
-      rows={data}
-      disableSelectionOnClick
-      columns={columns}
-      pageSize={8}
-      checkboxSelection
-    />
-  </div>
-  )
-}
+      <DataGrid
+        rows={data}
+        disableSelectionOnClick
+        columns={columns}
+        pageSize={8}
+        checkboxSelection
+      />
+    </div>
+  );
+};
