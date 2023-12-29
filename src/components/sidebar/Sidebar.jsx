@@ -21,13 +21,16 @@ export const Sidebar = () => {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
-              <MdLineStyle
-                className="sidebarIcon"
-                style={{ fontSize: "27px" }}
-              />
-              Home
-            </li>
+            <a href="/" className="link">
+              <li className="sidebarListItem active">
+                <MdLineStyle
+                  className="sidebarIcon"
+                  style={{ fontSize: "27px" }}
+                />
+                Home
+              </li>
+            </a>
+
             <li className="sidebarListItem">
               <MdOutlineTimeline
                 className="sidebarIcon"
@@ -47,18 +50,24 @@ export const Sidebar = () => {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <FaRegUser className="sidebarIcon" style={{ fontSize: "27px" }} />
-              Users
-            </li>
-
-            <li className="sidebarListItem">
-              <MdViewTimeline
-                className="sidebarIcon"
-                style={{ fontSize: "27px" }}
-              />
-              Products
-            </li>
+            <a href="/users" className="link">
+              <li className="sidebarListItem">
+                <FaRegUser
+                  className="sidebarIcon"
+                  style={{ fontSize: "27px" }}
+                />
+                Users
+              </li>
+            </a>
+            <a href="/products" className="link">
+              <li className="sidebarListItem">
+                <MdViewTimeline
+                  className="sidebarIcon"
+                  style={{ fontSize: "27px" }}
+                />
+                Products
+              </li>
+            </a>
             <li className="sidebarListItem">
               <MdOutlineAttachMoney
                 className="sidebarIcon"
@@ -86,20 +95,25 @@ export const Sidebar = () => {
               />
               Mail
             </li>
+            <a href="/feedback" className="link">
+
             <li className="sidebarListItem">
               <MdDynamicFeed
                 className="sidebarIcon"
                 style={{ fontSize: "27px" }}
-              />
+                />
               Feedback
             </li>
-            <li className="sidebarListItem">
-              <FiMessageSquare
-                className="sidebarIcon"
-                style={{ fontSize: "27px" }}
-              />
-              Messages
-            </li>
+                </a>
+            <a href="/messages" className="link">
+              <li className="sidebarListItem">
+                <FiMessageSquare
+                  className="sidebarIcon"
+                  style={{ fontSize: "27px" }}
+                />
+                Messages
+              </li>
+            </a>
           </ul>
         </div>
         <div className="sidebarMenu">

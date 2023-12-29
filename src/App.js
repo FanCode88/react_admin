@@ -7,6 +7,10 @@ import React from "react";
 import { UserList } from "./pages/userList/UserList";
 import { User } from "./pages/user/User";
 import { NewUser } from "./pages/newUser/NewUser";
+import { ProductList } from "./pages/productList/ProductList";
+import { Product } from "./pages/product/Product";
+import { Messages } from "./pages/messages/Messages";
+import { Feedback } from "./pages/feedback/Feedback";
 
 function App() {
   const router = createBrowserRouter([
@@ -19,12 +23,28 @@ function App() {
       element: <UserList />,
     },
     {
-      path: "/user",
+      path: "/user/:userId",
       element: <User />,
     },
     {
       path: "/newUser",
       element: <NewUser />,
+    },
+    {
+      path: "/products",
+      element: <ProductList />,
+    },
+    {
+      path: "/product/:productId",
+      element: <Product />,
+    },
+    {
+      path: "/messages",
+      element: <Messages />,
+    },
+    {
+      path: "/feedback",
+      element: <Feedback />,
     },
   ]);
 

@@ -9,7 +9,9 @@ export const Topbar = () => {
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
-          <span className="logo">SaceanuAdmin</span>
+          <a href="/" className="link">
+            <span className="logo">SaceanuAdmin</span>
+          </a>
         </div>
         <div className="topRight">
           <div className="topbarIconIconContainer">
