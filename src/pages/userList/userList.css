@@ -1,11 +1,13 @@
 .userList {
   flex: 4;
+  margin-left: 20px;
+  padding: 0 30px;
 }
 
 .userListUser {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .userListImg {
@@ -30,5 +32,5 @@
 .userListDelete {
   color: red;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 26px;
 }
